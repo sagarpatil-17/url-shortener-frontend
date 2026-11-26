@@ -4,7 +4,9 @@ import { environment } from "../../../environments/environment";
 import { CreateUrlRequest, CreateUrlResponse } from "../models/url.model";
 import { Observable } from "rxjs";
 
-@Injectable()
+@Injectable({
+    providedIn: "root"
+})
 export class UrlService {
 
     private http = inject(HttpClient);
