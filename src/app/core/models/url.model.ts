@@ -1,3 +1,7 @@
+export interface CreateUrlRequest {
+    originalUrl: string;
+}
+
 export interface ShortUrlData {
     id: string;
     originalUrl: string;
